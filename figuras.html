@@ -7,9 +7,48 @@
     <title>Figuras geométricas</title>
 </head>
 <body>
-    <h1>
-        Figuras geométricas.
-    </h1>
+    <header>
+        <h1>
+            Figuras geométricas.
+        </h1>
+        <p>
+            Este es el primer taller del cursopractico de jabva scrip
+        </p>
+    </header>
+    <section>
+        <h2>
+            Calcula el area y el perimetro de un cuadrado
+        </h2>
+        <form action="">
+            <label for="InputCuadrado">
+                escribe cuanto mide cada lado de tu cuadrado
+            </label>
+            <input id="InputCuadrado" type="number">
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular el area</button>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Calcula el area y el perimetro de un Triangulo
+        </h2>
+        <form action="">
+            <label for="InputLado1Triangulo">
+                Lado 1
+            </label>
+            <input id="InputLado1Triangulo" type="number">
+            <label for="InputLado2Triangulo">
+                Lado 2
+            </label>
+            <input id="InputLado2Triangulo" type="number">
+            <label for="InputbaseTriangulo">
+                base
+            </label>
+            <input id="InputbaseTriangulo" type="number">
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular el area</button>
+        </form>
+    </section>
 
     <script src="./figuras.js"></script>
 </body>
