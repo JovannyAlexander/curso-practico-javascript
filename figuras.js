@@ -61,7 +61,7 @@ function diametroCirculo(radio){
 //pi
 
 const PI = Math.PI;
-console.log("PI es: " + PI );
+//console.log("PI es: " + PI );
 
 //circunsferencia
 
@@ -111,8 +111,49 @@ function calcularPerimetroTriangulo(){
     const base = document.getElementById("InputbaseTriangulo");
     const value3 = parseFloat(InputbaseTriangulo.value);
     
-    //const perimetrotr = lado1 + lado2 + base;
     const perimetrotr = perimetroTriangulo(value1,value2,value3);
     alert(perimetrotr);
+ }
+
+ function calcularAreaTriangulo(){
+    const lado1 = document.getElementById("InputLado1Triangulo");
+    const value1 = parseFloat(InputLado1Triangulo.value);
+    
+    const lado2 = document.getElementById("InputLado2Triangulo");
+    const value2 = parseFloat(InputLado2Triangulo.value);
+
+    const base = document.getElementById("InputbaseTriangulo");
+    const value3 = parseFloat(InputbaseTriangulo.value);
+
+    const altura = parseFloat(Math.sqrt(value1*value2));
+    
+    const areaT = areaTriangulo(value3,altura);
+    alert(areaT);
+ }
+
+ // interaccion Circulo
+
+ function calcularDiametroCirculo(){
+    const lado1 = document.getElementById("InputRadioCirculo");
+    const value1 = parseFloat(InputRadioCirculo.value);
+    
+    const diamec = diametroCirculo(value1);
+    alert(diamec);
+ }
+
+ function calcularPerimetroCirculo(){
+    const lado1 = document.getElementById("InputRadioCirculo");
+    const value1 = parseFloat(InputRadioCirculo.value);
+    
+    const perimetroC = perimetroCirculo(value1);
+    alert(perimetroC);
+ }
+
+ function calcularAreaCirculo(){
+    const lado1 = document.getElementById("InputRadioCirculo");
+    const value1 = parseFloat(InputRadioCirculo.value);
+    
+    const areaC = areaCirculo(value1);
+    alert(areaC);
  }
 
