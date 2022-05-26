@@ -79,6 +79,22 @@ function areaCirculo (radio){
 }
 console.groupEnd();
 
+// triangulo Isoseles
+
+
+function alturaTrianguloI(ladoA, ladoB, ladoBase) {
+    if (ladoA == ladoB && ladoA != ladoBase) {
+       // console.log("Es un triangulo isosceles");
+        const cateto = (ladoBase /2)** 2;
+        const hipotenusa = (ladoA)**2;
+        const alturaI = Math.sqrt((hipotenusa) - (cateto));
+        return alturaI;
+        } else {
+       return("no es un triangulo correcto");
+    }
+}
+
+
 //aqui interactuamos con el HTML
 
 
@@ -156,4 +172,19 @@ function calcularPerimetroTriangulo(){
     const areaC = areaCirculo(value1);
     alert(areaC);
  }
+
+function CalculaAlturaTrianguloI(){
+    const lado1 = document.getElementById("InputLado1TrianguloI");
+    const value1 = InputLado1TrianguloI.value;
+
+    const lado2 = document.getElementById("InputLado2TrianguloI");
+    const value2 = InputLado2TrianguloI.value;
+    
+    const lado3 = document.getElementById("InputbaseTrianguloI");
+    const value3 = InputbaseTrianguloI.value;
+
+    const altura = alturaTrianguloI(value1,value2,value3);
+    alert (altura);
+}
+
 

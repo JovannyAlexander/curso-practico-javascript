@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Figuras geométricas</title>
 </head>
 <body>
@@ -61,6 +64,26 @@
             <button type="button" onclick="calcularDiametroCirculo()">Calcular Diametro</button>
             <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perimetro</button>
             <button type="button" onclick="calcularAreaCirculo()">Calcular el Area</button>
+        </form>
+    </section>
+    <section>
+        <h2>
+            Calcula Altura de un triangulo isosceles
+        </h2>
+        <form action="">
+            <label for="InputLado1TrianguloI">
+                Lado 1
+            </label>
+            <input id="InputLado1TrianguloI" type="number">
+            <label for="InputLado2TrianguloI">
+                Lado 2
+            </label>
+            <input id="InputLado2TrianguloI" type="number">
+            <label for="InputbaseTrianguloI">
+                base
+            </label>
+            <input id="InputbaseTrianguloI" type="number">
+            <button type="button" onclick="CalculaAlturaTrianguloI()">Calcular altura</button>
         </form>
     </section>
     <script src="./figuras.js"></script>
