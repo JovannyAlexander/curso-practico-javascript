@@ -180,7 +180,7 @@ function CalculaAlturaTrianguloI(){
     const lado2 = document.getElementById("InputLado2TrianguloI");
     const value2 = InputLado2TrianguloI.value;
     
-    const lado3 = document.getElementById("InputbaseTrianguloI");
+    const lado3 = document.getElementById("InputbaseTrianguloI");   
     const value3 = InputbaseTrianguloI.value;
 
     const altura = alturaTrianguloI(value1,value2,value3);
